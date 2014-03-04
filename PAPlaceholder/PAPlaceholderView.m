@@ -35,20 +35,24 @@
     _topDim = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, DIM_HEIGHT)];
     _topDim.textAlignment = NSTextAlignmentCenter;
     _topDim.textColor = _lineColor;
+    _topDim.backgroundColor = [UIColor clearColor];
     [self addSubview:_topDim];
     _leftDim = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, DIM_HEIGHT)];
     _leftDim.textColor = _lineColor;
+    _leftDim.backgroundColor = [UIColor clearColor];
     [self addSubview:_leftDim];
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, TITLE_HEIGHT)];
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     _titleLabel.font = [UIFont systemFontOfSize:TITLE_HEIGHT];
     _titleLabel.text = @"Placeholder";
     _titleLabel.textColor = _lineColor;
+    _titleLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:_titleLabel];
     _subtitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, TITLE_HEIGHT)];
     _subtitleLabel.textAlignment = NSTextAlignmentCenter;
     _subtitleLabel.font = [UIFont italicSystemFontOfSize:TITLE_HEIGHT-10];
     _subtitleLabel.textColor = _lineColor;
+    _subtitleLabel.backgroundColor = [UIColor clearColor];
     [self addSubview:_subtitleLabel];
 }
 
